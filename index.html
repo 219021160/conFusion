@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/styles.css" />
     <title>Ristorante Con Fusion</title>
 </head>
 
@@ -17,7 +18,7 @@
     <header class="jumbotron">
         <div class="container">
 
-            <div class="row">
+            <div class="row rowheader">
                 <div class="col-12 col-sm-6">
                     <h1>Ristorante con Fusion</h1>
                     <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
@@ -36,10 +37,11 @@
     </header>
 
     
+    <!-- CONTENT -->
 
     <div class="container">
-
-        <div class="row">
+        <!-- align-items-center class to align items vertically centered -->
+        <div class="row rowcontent align-items-center">
             <!-- col-12 for extra small screens occupie all 12 -->
             <!-- col-sm-4 for small screens occupie 4 of 12 columns leaving 8 -->
             <!-- col-md-3 for medium-xl screens occupie 3 of 12 columns leaving 9 -->
@@ -58,7 +60,7 @@
         </div>
 
 
-        <div class="row">
+        <div class="row rowcontent align-items-center">
 
             <div class="col-12 col-sm-4 col-md-3 ">
                 <h3>This Month's Promotions</h3>
@@ -70,7 +72,7 @@
             <!-- end of row class -->
         </div>
 
-        <div class="row">
+        <div class="row rowcontent align-items-center">
 
             <div class="col-12 col-sm-4 col-md-3">
                 <h3>Meet our Culinary Specialists</h3>
@@ -86,8 +88,9 @@
         <!-- end of container class -->
     </div>
 
+    <!-- END OF CONTENT -->
     
-    <footer>
+    <footer class="footer">
 
         <div class="container">
 
@@ -95,7 +98,8 @@
 
                 <div class="col-4 col-sm-2" >
                     <h5>Links</h5>
-                    <ul>
+                    <!-- list unstyled remove styling on list -->
+                    <ul class="list-unstyled">
                         <li><a href="#">Home</a></li>
                         <li><a href="#">About</a></li>
                         <li><a href="#">Menu</a></li>
@@ -115,8 +119,9 @@
 		           </address>
                 </div>
 
-                <div class="col-12 col-sm-4">
-                    <div>
+                <!-- align-self-center position content horizontally centered applied to the div containing content/items  -->
+                <div class="col-12 col-sm-4 align-self-center ">
+                    <div class="text-center ">
                         <a href="http://google.com/+">Google+</a>
                         <a href="http://www.facebook.com/profile.php?id=">Facebook</a>
                         <a href="http://www.linkedin.com/in/">LinkedIn</a>
@@ -129,8 +134,9 @@
                 <!-- end of class row -->
            </div>
 
-           <div class="row">             
-                <div class="col-auto">
+           <div class="row justify-content-center " >  
+                <!-- justify-content-center position content horizontally centered  -->
+                <div class="col-auto" >
                     <p>© Copyright 2018 Ristorante Con Fusion</p>
                 </div>
                 <!-- end of class row -->

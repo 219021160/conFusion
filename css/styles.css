@@ -1,0 +1,40 @@
+.rowheader {
+    /* top-bottom right-left */
+    margin:0px auto;
+    padding: 0px auto;
+}
+
+.rowcontent {
+    /* top-bottom right-left */
+    margin: 0px auto;
+    /* top right bottom left */
+    padding: 50px 0px 50px 0px;
+    border-bottom: 1 ridge;
+    /* prevents content to not be smaller than the height given */
+    min-height: 400px;
+}
+
+.footer {
+    background-color: #D1C4E9;
+    /* top-bottom right-left */
+    margin: 0px auto;
+    /* top right bottom left */
+    padding: 20px 0px 20px 0px;
+}
+
+/* add on what bootstrap already has */
+.jumbotron {
+    /* top-bottom right-left */
+    padding: 70px 30px;
+    margin:0px auto;
+    background-color: #9575CD;
+    color: floralwhite;
+}
+
+.address {
+    /* 20% smaller than the normal font size */
+    font-size: 80%;
+    margin:0px;
+    columns: #0f0f0f;
+}
+

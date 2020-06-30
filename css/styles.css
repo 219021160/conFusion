@@ -8,7 +8,7 @@
     /* top-bottom right-left */
     margin: 0px auto;
     /* top right bottom left */
-    padding: 50px 0px 50px 0px;
+    padding: 20px 0px 20px 0px;
     border-bottom: 1 ridge;
     /* prevents content to not be smaller than the height given */
     min-height: 400px;
@@ -35,6 +35,23 @@
     /* 20% smaller than the normal font size */
     font-size: 80%;
     margin:0px;
-    columns: #0f0f0f;
+    color:#0f0f0f
+}
+
+.rowaboutush {
+    margin-top: 10px;
+    margin-bottom: 50px;
+    margin-left: -10px;
+}
+
+body {
+    padding-top: 50px;
+    /* either bring an object forward or behind another object */
+    z-index: 0;
+}
+
+
+.navbar-dark {
+    background-color: #512DAB;
 }
 

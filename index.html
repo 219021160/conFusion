@@ -7,12 +7,72 @@
     <!-- make page responsive -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css" />
     <title>Ristorante Con Fusion</title>
 </head>
 
 <body>
+
+    <!-- NAVIGATION BAR -->
+    <!-- navbar and breadcrumbs -->
+    <!-- navbar-dar give a dark color navbar -->
+    <!-- navbar-expand-sm from small to extra small screens navbar will collapse thus a togglable navbr  -->
+    <!-- bg-primary background color of blue  -->
+    <!-- fixed-top fixes bar to stay at the top of page -->
+    <nav class="navbar navbar-dark navbar-expand-sm fixed-top  ">
+
+        <!-- content within navigation bar -->
+        <div class="container">
+            <!-- navbar-toggler making the button a toggler to collapes and expand the navigation bar -->
+            <!-- type="button" indication that it acts as a button -->
+            <!-- data-toggle="collape" collapses data/nav-items, is a javascript component -->
+            <button style="margin-right: 10px;"  class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar" >
+                <!-- navbar-toggler-icon show an icon -->
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- navbar-brand able to display name or logo -->
+            <a class="navbar-brand mr-auto" href="#" >Ristorante Con fusion</a>
+           
+            <!-- show content when button clicked -->
+            <div class="collapse navbar-collapse " id="Navbar">
+
+                <!-- start of nav-items -->
+                <!-- navbar-nav define link which are displayed horizontally -->
+                <!-- mr-auto defined MarginRight auto makes sure it goes as far as possible to the right -->
+                <ul class="nav navbar-nav mr-auto" >
+                    <!-- HOME LINK -->
+                    <!-- nav-item sees it as items of the navbar -->
+                    <!-- active shows user which page/link is active or viewing -->
+                    <li class="nav-item active">
+                        <!-- nav-link sees it as link within navbar -->
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <!-- ABOUT LINK -->
+                    <li class="nav-item">
+                        <!-- nav-link sees it as link within navbar -->
+                        <a class="nav-link" href="./aboutus.html">About Us</a>
+                    </li>
+                    <!-- MENU LINK -->
+                    <li class="nav-item">
+                        <!-- nav-link sees it as link within navbar -->
+                        <a class="nav-link" href="#">Menu</a>
+                    </li>
+                    <!-- CONTACT LINK -->
+                    <li class="nav-item">
+                        <!-- nav-link sees it as link within navbar -->
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                <!-- end of nav-items -->
+                </ul>
+
+             </div>
+        <!-- end of class container -->
+        </div>
+
+    </nav>
 
     <!-- class sets appart content from the rest of the page -->
     <header class="jumbotron">
@@ -26,7 +86,7 @@
                 <!-- col-12 will stack content below the above content for extra small screens -->
                 <!-- col-sm will occupie whats left of the columns -->
                 <div class="col-12 col-sm">
-                    <p>This is nick vjguijh</p>
+                    <p></p>
                 </div>
                 <!-- end of class row -->
             </div>
@@ -54,7 +114,7 @@
             <!-- col-md-3 for medium-xl screens occupie the rmaining 9 -->
             <div class="col col-sm order-sm-first col-md">
                 <h2>Uthappizza</h2>
-                <p>A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.</p>
+                <p class="d-none d-sm-block">A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.</p>
             </div>
             <!-- end of row class -->
         </div>
@@ -67,7 +127,7 @@
             </div>
             <div class="col-12 col-sm col-md">
                 <h2>Weekend Grand Buffet</h2>
-                <p>Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
+                <p class="d-none d-sm-block">Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
             </div>
             <!-- end of row class -->
         </div>
@@ -80,7 +140,7 @@
             <div class="col col-sm col-md"> 
                 <h2>Alberto Somayya</h2>
                 <h4>Executive Chef</h4>
-                <p>Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences. </p>
+                <p class="d-none d-sm-block">Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences. </p>
             </div>
             <!-- end of row class -->
         </div>
@@ -101,7 +161,7 @@
                     <!-- list unstyled remove styling on list -->
                     <ul class="list-unstyled">
                         <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
+                        <li><a href="./aboutus.html">About</a></li>
                         <li><a href="#">Menu</a></li>
                         <li><a href="#">Contact</a></li>
                     </ul>
@@ -146,11 +206,18 @@
         </div>
     </footer>
 
-    <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
-    <script src="node_modules/jquery/dist/jquery.slim.min.js" />
-    <script src="node_modules/popper.js/dist/umd/popper.min.js" />
-    <script src="ode_modules/bootstrap/dist/js/bootstrap.min.js" />
+    <!-- optional js -->
 
+    <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

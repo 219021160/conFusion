@@ -89,8 +89,15 @@
                 </div>
                 <!-- col-12 will stack content below the above content for extra small screens -->
                 <!-- col-sm will occupie whats left of the columns -->
-                <div class="col-12 col-sm align-self-center">
-                    <img src="img/logo.png" class="img-fluid" />
+                <div class="col-12 col-sm-6 row  align-items-center ">
+                    <div class="col-sm-6 ">
+                        <img src="img/logo.png" class="img-fluid" />
+                    </div>
+                    <div class="col-sm align-self-center">
+                        <!-- btn-block streches to 100% width -->
+                        <a class="btn btn-warning btn-block" role="button" href="#reservationtable" >Reserve Table</a>
+                    </div>
+                    
                 </div>
                 <!-- end of class row -->
             </div>
@@ -138,19 +145,20 @@
         <div class="row rowcontent align-items-center">
 
             <div class="col-12 col-sm-4 col-md-3 ">
-                <div class="media">
-                    <img src="img/buffet.png" class="d-flex mr-3 align-self-center img-thumbnail" />
-                    <div class="media-body">
-                        <h3 >This Month's Promotions</h3>
-
-                    </div>
-
-                </div>               
+                <h3 >This Month's Promotions</h3>                   
             </div>
 
             <div class="col-12 col-sm col-md">
-                <h2>Weekend Grand Buffet</h2>
-                <p class="d-none d-sm-block">Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
+                <div class="media">       
+                    <div class="media-body">
+                        <h2>Weekend Grand Buffet <span class="badge badge-danger"><i>NEW</i></span></h2>
+                        <p class="d-none d-sm-block">Featuring mouthwatering combinations with a choice of five different salads, six enticing
+                            appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99
+                            per person </p>
+
+                    </div>
+                    <img src="img/buffet.png" class="d-flex mr-3 align-self-center img-thumbnail" />
+                </div>
             </div>
             <!-- end of row class -->
         </div>
@@ -175,6 +183,58 @@
                 </div>
             </div>
             <!-- end of row class -->
+        </div>
+
+        <!-- RESERVATION TABLE -->
+        <div class="row rowcontent col-sm-8 align-items-center justify-content-center" id="reservationtable">
+
+            <div class="card" >
+                <h3 class="card-header bg-warning text-white" >Reserve a Table</h1>
+                <div class="card-body">
+                   <dl class="row">
+                       <dt class="col-sm-2" style="font-weight: 550;">Number of Guests</dt>
+                       <dd class="col-sm-10">
+                        <div class="form-check form-check-inline">
+                            <input name="one" id="one" class="form-check-input" type="radio"  />
+                            <label for="one" class="form-check-label">1</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input name="two" id="two" class="form-check-input" type="radio" />
+                            <label for="two" class="form-check-label">2</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input name="three" id="three" class="form-check-input" type="radio" />
+                            <label for="three" class="form-check-label">3</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input name="four" id="four" class="form-check-input" type="radio" />
+                            <label for="four" class="form-check-label">4</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input name="five" id="five" class="form-check-input" type="radio" />
+                            <label for="five" class="form-check-label">5</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input name="six" id="sixtwo" class="form-check-input" type="radio" />
+                            <label for="six" class="form-check-label">6</label>
+                        </div>
+
+                       </dd>
+
+                       <dt class="col-sm-2" style="font-weight: 550;">Date and Time</dt>
+                       <dd class="col-sm-10 row">
+                               <div class="col-12 col-sm-3" >
+                                <input name="date" id="date" class="form-control" type="date" placeholder="Date" />
+                               </div>
+                               <div class="col-12 col-sm-3 offset-sm-2" >
+                                <input name="time" id="time" class="form-control" type="time" placeholder="Time" />
+                               </div>
+                       </dd>
+                   </dl>
+                   <a class="offset-sm-2 bg-primary text-white" role="button" style="padding: 10px 20px; border-radius: 5;" >Reserve</a>
+                </div>
+            </div>
+
         </div>
 
         <!-- end of container class -->

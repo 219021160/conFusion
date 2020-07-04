@@ -323,14 +323,9 @@
                     </a>
 
                     <!-- controls to pause and resume carousel -->
-                    <div class="btn-group" id="carouselbutton">
-                        <button class="btn btn-danger btn-sm" id="carousel-pause" >
+                        <button class="btn btn-danger btn-sm" id="carouselbutton" >
                             <span class="fa fa-pause"></span>
                         </button>
-                        <button class="btn btn-danger btn-sm" id="carousel-play">
-                            <span class="fa fa-play"></span>
-                        </button>
-                    </div>
                     <!-- controls to pause and resume carousel -->
 
 
@@ -494,16 +489,21 @@
                 //move the slide faster, change after 2seconds
                 $('#mycarousel').carousel({interval:2000});
 
-                //when button with id carousel-pause is clicked execute the following
-                $('#carousel-pause').click(function(){
-                    //pause mycarousel
-                    $('#mycarousel').carousel('pause');
-                });
-
-                //when button with id carousel-pause is clicked execute the following
-                $('#carousel-play').click(function(){
-                    //play mycarousel
-                    $('#mycarousel').carousel('cycle');
+                $('#carouselbutton').click(function(){
+                    //if the carouselbutton is currently a pause button then now change it to play and vice versa
+                    if ( $('#carouselbutton').children('span').hasClass('fa-pause') ){
+                        //mycarousel is currently cycling
+                        //user can pause
+                        $('#mycarousel').carousel('pause');
+                        $('#carouselbutton').children('span').removeClass('fa-pause');
+                        $('#carouselbutton').children('span').addClass('fa-play');
+                    } else {
+                        //mycarousel is currently paused
+                        //user can play
+                        $('#mycarousel').carousel('cycle');
+                        $('#carouselbutton').children('span').removeClass('fa-play');
+                        $('#carouselbutton').children('span').addClass('fa-pause');
+                    }
                 });
             });
         </script>

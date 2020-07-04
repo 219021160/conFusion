@@ -1,88 +1,56 @@
 .rowheader {
-    /* top-bottom right-left */
-    margin:0px auto;
-    padding: 0px auto;
+  margin: 0px auto;
+  padding: 0px 0px;
 }
-
 .rowcontent {
-    /* top-bottom right-left */
-    margin: 0px auto;
-    /* top right bottom left */
-    padding: 20px 0px 20px 0px;
-    border-bottom: 1 ridge;
-    /* prevents content to not be smaller than the height given */
-    min-height: 200px;
+  margin: 0px auto;
+  padding: 50px 0px;
+  border-bottom: 1px ridge;
+  min-height: 400px;
 }
-
 .footer {
-    background-color: #D1C4E9;
-    /* top-bottom right-left */
-    margin: 0px auto;
-    /* top right bottom left */
-    padding: 20px 0px 20px 0px;
+  background-color: #D1C4E9;
+  margin: 0px auto;
+  padding: 20px 0px;
 }
-
-/* add on what bootstrap already has */
 .jumbotron {
-    /* top-bottom right-left */
-    padding: 70px 30px;
-    margin:0px auto;
-    background-color: #9575CD;
-    color: floralwhite;
+  margin: 0px auto;
+  padding: 70px 30px;
+  background: #9575CD;
+  color: floralwhite;
 }
-
-.address {
-    /* 20% smaller than the normal font size */
-    font-size: 80%;
-    margin:0px;
-    color:#0f0f0f
+address {
+  font-size: 80%;
+  margin: 0px;
+  color: #0f0f0f;
 }
-
-.rowaboutush {
-    margin-top: 10px;
-    margin-bottom: 50px;
-    margin-left: -10px;
-}
-
 body {
-    padding-top: 50px;
-    /* either bring an object forward or behind another object */
-    z-index: 0;
+  padding: 50px 0px 0px 0px;
+  z-index: 0;
 }
-
-
 .navbar-dark {
-    background-color: #512DAB;
+  background-color: #512DA8;
 }
-
 .tab-content {
-    border-left: 2px solid #ddd;
-    border-right: 2px solid #ddd;
-    border-bottom: 2px solid #ddd;
-    padding: 10px;
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  padding: 10px;
 }
-
-
 .carousel {
-    background-color: #512DAB;
-    margin-top: 50px;
-    margin-bottom: 50px;
+  background: #512DA8;
 }
-
-.carousel-item {
-    height: 300;
+.carousel .carousel-item {
+  height: 300px;
 }
-
-/* position image to the top left corner  */
-.carousel-item img {
-    top:0;
-    left:0;
-    min-height: 300px;
+.carousel .carousel-item img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-height: 300px;
 }
-
-/* position to the right bottom corner of carousel */
 #carouselbutton {
-    right: 0px;
-    position: absolute;
-    bottom: 0px;
+  right: 0px;
+  position: absolute;
+  bottom: 0px;
 }

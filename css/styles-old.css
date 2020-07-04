@@ -1,0 +1,88 @@
+.rowheader {
+    /* top-bottom right-left */
+    margin:0px auto;
+    padding: 0px auto;
+}
+
+.rowcontent {
+    /* top-bottom right-left */
+    margin: 0px auto;
+    /* top right bottom left */
+    padding: 20px 0px 20px 0px;
+    border-bottom: 1 ridge;
+    /* prevents content to not be smaller than the height given */
+    min-height: 200px;
+}
+
+.footer {
+    background-color: #D1C4E9;
+    /* top-bottom right-left */
+    margin: 0px auto;
+    /* top right bottom left */
+    padding: 20px 0px 20px 0px;
+}
+
+/* add on what bootstrap already has */
+.jumbotron {
+    /* top-bottom right-left */
+    padding: 70px 30px;
+    margin:0px auto;
+    background-color: #9575CD;
+    color: floralwhite;
+}
+
+.address {
+    /* 20% smaller than the normal font size */
+    font-size: 80%;
+    margin:0px;
+    color:#0f0f0f
+}
+
+.rowaboutush {
+    margin-top: 10px;
+    margin-bottom: 50px;
+    margin-left: -10px;
+}
+
+body {
+    padding-top: 50px;
+    /* either bring an object forward or behind another object */
+    z-index: 0;
+}
+
+
+.navbar-dark {
+    background-color: #512DAB;
+}
+
+.tab-content {
+    border-left: 2px solid #ddd;
+    border-right: 2px solid #ddd;
+    border-bottom: 2px solid #ddd;
+    padding: 10px;
+}
+
+
+.carousel {
+    background-color: #512DAB;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.carousel-item {
+    height: 300;
+}
+
+/* position image to the top left corner  */
+.carousel-item img {
+    top:0;
+    left:0;
+    min-height: 300px;
+}
+
+/* position to the right bottom corner of carousel */
+#carouselbutton {
+    right: 0px;
+    position: absolute;
+    bottom: 0px;
+}

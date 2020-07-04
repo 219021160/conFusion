@@ -11,7 +11,7 @@
     padding: 20px 0px 20px 0px;
     border-bottom: 1 ridge;
     /* prevents content to not be smaller than the height given */
-    min-height: 100px;
+    min-height: 200px;
 }
 
 .footer {
@@ -60,4 +60,29 @@ body {
     border-right: 2px solid #ddd;
     border-bottom: 2px solid #ddd;
     padding: 10px;
+}
+
+
+.carousel {
+    background-color: #512DAB;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.carousel-item {
+    height: 300;
+}
+
+/* position image to the top left corner  */
+.carousel-item img {
+    top:0;
+    left:0;
+    min-height: 300px;
+}
+
+/* position to the right bottom corner of carousel */
+#carouselbutton {
+    right: 0px;
+    position: absolute;
+    bottom: 0px;
 }

@@ -1,5 +1,10 @@
 
 
+
+
+
+//optional js
+
 $(document).ready(function () {
     //move the slide faster, change after 2seconds
     $('#mycarousel').carousel({ interval: 1500 });

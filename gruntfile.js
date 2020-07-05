@@ -12,7 +12,6 @@ module.exports = function(grunt){
         useminPrepare: 'grunt-usemin'
     });
 
-    // require('grunt-sass')(grunt);
 
     //grunt is an object
     grunt.initConfig({

@@ -8,11 +8,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <!-- Bootstrap CSS -->
+
+    <!-- combine all css files into a main.css file -->
+    <!-- treat everything within the build:css as a unite thus combine in a single folder -->
+    <!-- syntax used by usemin-cli module -->
+    
+    <!-- build:css css/main.css -->
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
     <link rel="stylesheet" href="css/styles.css" />
+    
+    <!-- endbuild -->
+    
     <title>Ristorante Con Fusion</title>
 </head>
 
@@ -73,7 +83,7 @@
                 </ul>
 
                 <span class="navbar-text">
-                    <a data-toggle="modal" data-target="#loginmodal">
+                    <a id="loginbutton">
                         <span class="fa fa-sign-in fa-lg"> Login</span>
                     </a>
                 </span>
@@ -92,7 +102,7 @@
 
                 <div class="modal-header ">
                     <h3>Reserve a Table</h3>
-                    <button class="close" role="button" data-dismiss="modal" >&times;</button>
+                    <button class="close text-white" role="button" data-dismiss="modal" >&times;</button>
                 </div>
 
                 <div class="modal-body" >
@@ -193,7 +203,7 @@
     <!-- role=dialog means popup at the top of the page -->
     <!-- class modal create a modal container -->
     <!-- class fade says do not show or be visible -->
-    <div class="modal fade" role="dialog" id="loginmodal">
+    <div class="modal fade" role="dialog" id="loginmodal" data-backdrop="static" data-keyboard="true" tabindex="-1">
         <!-- create the actual modal -->
         <!-- modal-dialog creates the modal -->
         <!-- role content means this contains the modal content -->
@@ -203,7 +213,7 @@
                 
                 <div class="modal-header ">
                     <div class="row col-12 justify-content-center">
-                        <h4 class="modal-title">LOGIN</h4>
+                        <h3 class="modal-title">LOGIN</h3>
                     </div>
                    
                     <!-- data-dismiss=modal says dismiss modal -->
@@ -255,8 +265,7 @@
                         <!-- data-html allows the styling of tooltip using html -->
                         <!-- title is the actual contents of the tooltiip -->
                         <!-- data-placement causes the tooltip to appear at the bottom -->
-                        <a class="btn btn-warning btn-block" role="button" 
-                        data-toggle="modal" href="#reservationmodal" >Reserve Table</a>
+                        <a class="btn btn-warning btn-block" style="color: black;" role="button" id="reservationbutton" >Reserve Table</a>
                     </div>
                     
                 </div>
@@ -473,6 +482,9 @@
     
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
+   
+    <!-- build:js js/main.js -->
+
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
@@ -484,29 +496,9 @@
         crossorigin="anonymous"></script>
     
         <!-- optional js -->
-        <script>
-            $(document).ready(function(){
-                //move the slide faster, change after 2seconds
-                $('#mycarousel').carousel({interval:1500});
+        <script src="./js/scripts.js"></script>
 
-                $('#carouselbutton').click(function(){
-                    //if the carouselbutton is currently a pause button then now change it to play and vice versa
-                    if ( $('#carouselbutton').children('span').hasClass('fa-pause') ){
-                        //mycarousel is currently cycling
-                        //user can pause
-                        $('#mycarousel').carousel('pause');
-                        $('#carouselbutton').children('span').removeClass('fa-pause');
-                        $('#carouselbutton').children('span').addClass('fa-play');
-                    } else {
-                        //mycarousel is currently paused
-                        //user can play
-                        $('#mycarousel').carousel('cycle');
-                        $('#carouselbutton').children('span').removeClass('fa-play');
-                        $('#carouselbutton').children('span').addClass('fa-pause');
-                    }
-                });
-            });
-        </script>
+    <!-- endbuild -->
 
     </body>
 

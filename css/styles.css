@@ -23,6 +23,22 @@
   color: floralwhite;
 }
 
+.modal-header {
+  background-color: #512DA8;
+}
+
+.modal-header h3 {
+  color: floralwhite;
+}
+
+.modal-header button {
+  color: floralwhite;
+}
+
+.modal-content {
+  background-color: #D1C4E9;
+}
+
 address {
   font-size: 80%;
   margin: 0px;
@@ -34,7 +50,7 @@ body {
   z-index: 0;
 }
 
-.navber-dark {
+.navbar-dark {
   background-color: #512DA8;
 }
 
@@ -61,8 +77,8 @@ body {
 }
 
 #carouselbutton {
-  right: 0px;
+  right: 0;
   position: absolute;
-  bottom: 0px;
+  bottom: 0;
 }
 /*# sourceMappingURL=styles.css.map */
